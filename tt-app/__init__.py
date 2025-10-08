@@ -6,7 +6,7 @@ def create_app(test_config = None):
 
     app.config.from_mapping(
         SECRET_KEY = 'dev',
-        DATABASE = os.path.join(app.instance_path, '') #Fill '' with database file
+        DATABASE = os.path.join(app.instance_path, 'tt-app.sqlite') #Fill '' with database file
     )
 
 
